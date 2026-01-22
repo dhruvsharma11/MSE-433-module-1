@@ -1,0 +1,13 @@
+# Core Data Science
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+
+# Machine Learning (for RAPM player value estimation)
+scikit-learn>=1.3.0
+
+# Optimization
+gurobipy>=11.0.0
+
+# Optional: Alternative optimization if Gurobi license unavailable
+scipy>=1.11.0
