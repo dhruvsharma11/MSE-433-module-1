@@ -42,10 +42,38 @@ grbgetkey YOUR-LICENSE-KEY
 ## Usage
 
 ### Reproduce All Results
-```bash
-jupyter notebook analysis.ipynb
-```
-Run all cells in order. This generates all figures, tables, and exports `player_values.csv`.
+
+**Step 1: Open the Notebook in Your IDE**
+
+Open `analysis.ipynb` in VS Code, Cursor, or any IDE with Jupyter support.
+
+**Step 2: Select Python Interpreter**
+
+- Click on the kernel/interpreter selector (usually in top-right corner)
+- Select the Python interpreter from your `venv` environment
+- Should show: `venv (Python 3.x.x)`
+
+**Step 3: Run All Cells**
+
+Click **"Run All"** button at the top of the notebook, or run cells individually with `Shift + Enter`.
+
+**What the notebook does:**
+1. Loads stint and player data (`stint_data.csv`, `player_data.csv`)
+2. Performs exploratory data analysis (EDA) - creates Tables A1, A2, A3
+3. Calculates RAPM player values using Ridge regression
+4. Applies Bayesian prior integration with mobility ratings
+5. Generates all figures for the report:
+   - Figure 1: Mobility vs RAPM correlation (r=0.688)
+   - Figure 2: Prior weight sensitivity analysis
+   - Fatigue model curve
+   - Game state weighting visualization
+   - Player type distribution scatter plot
+6. Runs scenario analysis comparing observed vs model lineups (3 scenarios)
+7. **Exports `player_values.csv`** (required for the web app)
+
+**Expected runtime**: ~30 seconds to run all cells.
+
+> **Note**: Make sure you've activated the virtual environment before opening your IDE so it can detect the correct Python interpreter.
 
 ### Run Web App
 ```bash
