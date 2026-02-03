@@ -21,7 +21,7 @@ from optimizer import (
 # Page configuration
 st.set_page_config(
     page_title="WCR Lineup Optimizer",
-    page_icon="🏀",
+    page_icon="🏉",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
@@ -402,7 +402,7 @@ def main():
     # Team selection screen
     if not st.session_state.game_started:
         st.markdown("<br><br>", unsafe_allow_html=True)
-        st.markdown("## 🏀 Wheelchair Rugby Lineup Optimizer")
+        st.markdown("## 🏉 Wheelchair Rugby Lineup Optimizer")
         st.markdown("Select teams to begin")
         
         col1, col2, col3 = st.columns([2, 1, 2])
