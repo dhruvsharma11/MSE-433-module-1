@@ -9,7 +9,6 @@ A data-driven lineup optimization system for wheelchair rugby.
 ## Project Structure
 
 ```
-WCR/
 ├── analysis.ipynb      # Main analysis notebook (run this to reproduce all results)
 ├── app.py              # Streamlit web application
 ├── optimizer.py        # Core optimization functions used by app.py
@@ -29,7 +28,7 @@ WCR/
 ```bash
 # 1. Clone the repository
 git clone <your-repo-url>
-cd WCR
+cd <repository-folder>
 
 # 2. Create and activate virtual environment
 python -m venv venv
@@ -48,7 +47,7 @@ grbgetkey YOUR-LICENSE-KEY
 ```bash
 # 1. Clone the repository
 git clone <your-repo-url>
-cd WCR
+cd <repository-folder>
 
 # 2. Create and activate virtual environment
 python -m venv venv
