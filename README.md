@@ -24,15 +24,40 @@ WCR/
 
 ## Setup
 
-```bash
-# 1. Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+### macOS/Linux
 
-# 2. Install dependencies
+```bash
+# 1. Clone the repository
+git clone <your-repo-url>
+cd WCR
+
+# 2. Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate
+
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# 3. Set up Gurobi license (free for academics)
+# 4. Set up Gurobi license (free for academics)
+# Get license at: https://www.gurobi.com/academia/academic-program-and-licenses/
+grbgetkey YOUR-LICENSE-KEY
+```
+
+### Windows
+
+```bash
+# 1. Clone the repository
+git clone <your-repo-url>
+cd WCR
+
+# 2. Create and activate virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Set up Gurobi license (free for academics)
 # Get license at: https://www.gurobi.com/academia/academic-program-and-licenses/
 grbgetkey YOUR-LICENSE-KEY
 ```
@@ -45,12 +70,12 @@ grbgetkey YOUR-LICENSE-KEY
 
 **Step 1: Open the Notebook in Your IDE**
 
-Open `analysis.ipynb` in VS Code, Cursor, or any IDE with Jupyter support.
+Open `analysis.ipynb` in your preferred IDE.
 
 **Step 2: Select Python Interpreter**
 
 - Click on the kernel/interpreter selector (usually in top-right corner)
-- Select the Python interpreter from your `venv` environment
+- Select the Python interpreter from your `venv` environment that you activated
 - Should show: `venv (Python 3.x.x)`
 
 **Step 3: Run All Cells**
@@ -65,13 +90,8 @@ Click **"Run All"** button at the top of the notebook, or run cells individually
 5. Generates all figures for the report:
    - Figure 1: Mobility vs RAPM correlation (r=0.688)
    - Figure 2: Prior weight sensitivity analysis
-   - Fatigue model curve
-   - Game state weighting visualization
-   - Player type distribution scatter plot
 6. Runs scenario analysis comparing observed vs model lineups (3 scenarios)
 7. **Exports `player_values.csv`** (required for the web app)
-
-**Expected runtime**: ~30 seconds to run all cells.
 
 > **Note**: Make sure you've activated the virtual environment before opening your IDE so it can detect the correct Python interpreter.
 
