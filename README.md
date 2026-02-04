@@ -27,8 +27,8 @@ A data-driven lineup optimization system for wheelchair rugby.
 
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
-cd <repository-folder>
+git clone https://github.com/dhruvsharma11/MSE-433-module-1.git
+cd MSE-433-module-1
 
 # 2. Create and activate virtual environment
 python -m venv venv
@@ -46,8 +46,8 @@ grbgetkey YOUR-LICENSE-KEY
 
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
-cd <repository-folder>
+git clone https://github.com/dhruvsharma11/MSE-433-module-1.git
+cd MSE-433-module-1
 
 # 2. Create and activate virtual environment
 python -m venv venv
